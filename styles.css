@@ -1,5 +1,12 @@
+* {
+    margin: 0;
+}
+
 #container {
     height: 640px;
-    width: 640px;
-    border: 3px solid black;
+    width: 700px;
+    border: 0px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
 }
