@@ -5,9 +5,6 @@ function createSquares(gridSize) {
         const square = document.createElement("div");
         square.classList.add("square");
         container.appendChild(square);
-        square.style.height = "40px";
-        square.style.width = "40px";
-        square.style.border = "thin solid black";
     }
 };
 
