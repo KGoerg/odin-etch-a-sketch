@@ -11,8 +11,8 @@ function createSquares(gridSize) {
 createSquares(16);
 
 function hoverOver() {
-    square.addEventListener("mouseenter", (event) => {
-        event.target.style.color = "blue";
+    container.addEventListener("mouseover", (event) => {
+        event.target.style.backgroundColor = "#b68ed1";
     });
 };
 
