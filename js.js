@@ -17,3 +17,14 @@ function hoverOver() {
 };
 
 hoverOver();
+
+const button = document.querySelector("button");
+button.addEventListener("click", (event) => {
+    let buttonInput = prompt("Please enter a grid size.")
+    
+    if (buttonInput >= 100) {
+        alert("Please enter a grid size smaller than 100.");
+    } else {
+        createSquares(buttonInput);
+    }
+})
