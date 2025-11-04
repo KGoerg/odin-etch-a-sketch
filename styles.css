@@ -8,4 +8,12 @@
     border: 0px solid black;
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.square {
+    border: 1px solid black;
+    display: flex;
+    flex-basis: 40px;
+    flex-grow: 1;
 }
