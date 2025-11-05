@@ -52,8 +52,9 @@ gridButton.addEventListener("click", (event) => {
     }
 });
 
-//May come back to the idea of making a reset button. Code idea started below...
-// const resetButton = document.querySelector("#resetButton");
+// May come back to the idea of making a reset button. Code idea started below...
+const resetButton = document.querySelector("#resetButton");
 // resetButton.addEventListener("click", (event) => {
-//     container.backgroundColor = "white";
+//     container.removeEventListener("mouseover", (event));
 // });
+resetButton.disabled = true;
