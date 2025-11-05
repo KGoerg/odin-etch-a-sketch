@@ -14,8 +14,6 @@
 .square {
     border: 1px solid black;
     display: flex;
-    /* Flex-basis is set to 56.25px currently to accommodate the 16x16 grid (900px width / 16 = 56.25px per square). I might be able to override the flex-basis depending on user input for grid size */
-    flex-basis: 56.25px;
     flex-grow: 1;
     box-sizing: border-box;
 }
