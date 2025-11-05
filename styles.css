@@ -36,12 +36,10 @@ h3 {
 button {
     font-size: 14px;
     font-weight: bold;
-    border-radius: 30px;
-    background-color: #b68ed1;
     color: purple;
     width: 200px;
     height: 50px;
-    margin: 10px;
+    margin: 10px; */
 }
 #container {
     height: 850px;
