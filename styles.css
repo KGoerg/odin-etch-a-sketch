@@ -39,8 +39,8 @@ h3 {
     align-items: center;
 }
 
-#gridSelect,
-#resetButton {
+#gridSelect {
+/* #resetButton { */
     font-size: 14px;
     font-weight: bold;
     color: purple;
@@ -48,6 +48,7 @@ h3 {
     height: 50px;
     margin: 10px; */
 }
+
 #container {
     height: 850px;
     width: 850px;
