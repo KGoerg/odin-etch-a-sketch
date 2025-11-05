@@ -38,14 +38,14 @@ function removeSquares(parent) {
     }
 };
 
-//Allows new grid to be created. Need to update this so it doesn't make a new grid within the existing grid.
+//Allows new grid to be created.
 const button = document.querySelector("button");
 button.addEventListener("click", (event) => {
     let buttonInput = Number(window.prompt("Please enter a number less than 100.", ""));
     if (buttonInput >= 100) {
-        alert("Please enter a grid size smaller than 100.");
-    } else if (buttonInput === 0 || buttonInput === null) {
-        alert("Please enter a grid size larger than 0 and less than 100.");
+        alert("Please enter a number smaller than 100.");
+    } else if (buttonInput <= 0 || buttonInput === null || isNaN(buttonInput)) {
+        alert("Please enter a number larger than 0 and less than 100.");
     } else {
         removeSquares(container);
         createSquares(buttonInput);
