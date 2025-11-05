@@ -2,13 +2,56 @@
     margin: 0;
 }
 
+h1,
+h3,
+button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: purple;
+}
+
+h3 {
+    color: rgb(238, 238, 238);
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #b68ed1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+button {
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: #b68ed1;
+    color: purple;
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+}
 #container {
-    height: 900px;
-    width: 900px;
+    height: 850px;
+    width: 850px;
     border: 0px solid black;
+    padding: 3px, purple;
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
+    background-color: white;
 }
 
 .square {
