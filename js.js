@@ -4,11 +4,12 @@ function createSquares(gridSize) {
     for (i = 0; i < gridSize * gridSize; i++) {
         const square = document.createElement("div");
         square.classList.add("square");
+        square.style.flexBasis = `${900 / gridSize}px`;
         container.appendChild(square);
     }
 };
 
-createSquares(16);
+createSquares(64);
 
 function hoverOver() {
     container.addEventListener("mouseover", (event) => {
