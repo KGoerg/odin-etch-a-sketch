@@ -33,7 +33,14 @@ h3 {
     margin-bottom: 5px;
 }
 
-button {
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#gridSelect,
+#resetButton {
     font-size: 14px;
     font-weight: bold;
     color: purple;
