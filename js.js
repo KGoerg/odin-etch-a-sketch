@@ -15,11 +15,21 @@ createSquares(64);
 //Creates "hover" effect over squares.
 function hoverOver() {
     container.addEventListener("mouseover", (event) => {
-        event.target.style.backgroundColor = "#b68ed1";
+        event.target.style.backgroundColor = getRandomColor();
     });
 };
 
 hoverOver();
+
+//Function to create random hexadecimal codes for colors
+function getRandomColor() {
+  let letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
 
 //Removes each "firstChild" in the DOM tree until there are no more children left, thus removing all square divs from the grid container.
 function removeSquares(parent) {
