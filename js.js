@@ -21,14 +21,21 @@ function hoverOver() {
 
 hoverOver();
 
+//Removes each "firstChild" in the DOM tree until there are no more children left, thus removing all square divs from the grid container.
+function removeSquares(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+};
+
 //Allows new grid to be created. Need to update this so it doesn't make a new grid within the existing grid.
 const button = document.querySelector("button");
 button.addEventListener("click", (event) => {
-    let buttonInput = prompt("Please enter a grid size.")
-    
+    let buttonInput = prompt("Please enter a number less than 100.")
     if (buttonInput >= 100) {
         alert("Please enter a grid size smaller than 100.");
     } else {
+        removeSquares(container);
         createSquares(buttonInput);
     }
-})
+});
