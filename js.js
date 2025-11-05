@@ -10,7 +10,7 @@ function createSquares(gridSize) {
     return console.log(`Grid size ${gridSize} created`);
 };
 
-createSquares(64);
+createSquares(16);
 
 //Creates "hover" effect over squares.
 function hoverOver() {
