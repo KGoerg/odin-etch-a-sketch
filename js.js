@@ -52,9 +52,9 @@ gridButton.addEventListener("click", (event) => {
     }
 });
 
-// May come back to the idea of making a reset button. Code idea started below...
+// Resets to initial grid size
 const resetButton = document.querySelector("#resetButton");
-// resetButton.addEventListener("click", (event) => {
-//     container.removeEventListener("mouseover", (event));
-// });
-resetButton.disabled = true;
+resetButton.addEventListener("click", (event) => {
+    removeSquares(container);
+    createSquares(16);
+});
