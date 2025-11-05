@@ -39,15 +39,21 @@ function removeSquares(parent) {
 };
 
 //Allows new grid to be created.
-const button = document.querySelector("button");
-button.addEventListener("click", (event) => {
-    let buttonInput = Number(window.prompt("Please enter a number less than 100.", ""));
-    if (buttonInput >= 100) {
+const gridButton = document.querySelector("#gridSelect");
+gridButton.addEventListener("click", (event) => {
+    let gridButtonInput = Number(window.prompt("Please enter a number less than 100.", ""));
+    if (gridButtonInput >= 100) {
         alert("Please enter a number smaller than 100.");
-    } else if (buttonInput <= 0 || buttonInput === null || isNaN(buttonInput)) {
+    } else if (gridButtonInput <= 0 || gridButtonInput === null || isNaN(gridButtonInput)) {
         alert("Please enter a number larger than 0 and less than 100.");
     } else {
         removeSquares(container);
-        createSquares(buttonInput);
+        createSquares(gridButtonInput);
     }
 });
+
+//May come back to the idea of making a reset button. Code idea started below...
+// const resetButton = document.querySelector("#resetButton");
+// resetButton.addEventListener("click", (event) => {
+//     container.backgroundColor = "white";
+// });
