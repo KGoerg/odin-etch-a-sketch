@@ -4,7 +4,7 @@ function createSquares(gridSize) {
     for (i = 0; i < gridSize * gridSize; i++) {
         const square = document.createElement("div");
         square.classList.add("square");
-        square.style.flexBasis = `${900 / gridSize}px`;
+        square.style.flexBasis = `${850 / gridSize}px`;
         container.appendChild(square);
     }
     return console.log(`Grid size ${gridSize} created`);
