@@ -52,9 +52,10 @@ gridButton.addEventListener("click", (event) => {
     }
 });
 
-// Resets to initial grid size
+// Resets grid color
 const resetButton = document.querySelector("#resetButton");
 resetButton.addEventListener("click", (event) => {
+    let currentGrid = container.childElementCount;
     removeSquares(container);
-    createSquares(16);
-});
+    createSquares(Math.sqrt(currentGrid));
+})
